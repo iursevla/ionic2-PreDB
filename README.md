@@ -1,23 +1,30 @@
-# ionic2-PreDB
+# ionic2 Pre-Populated Database Example
 Simple Ionic 2 **pre-populated** database starter project.
 Anything let me know by creating a issue or send a PM.
-##### Important Note 
+### Important Note 
 I used the emulator for android **Google Nexus 5X - 6.0.0 - API 23 from Genymotion**
 
-
-#### To install:
-1. Clone project
-2. Inside the project folder run: `npm init`
+## To install this project:
+1. Clone project `git clone https://github.com/iursevla/ionic2-PreDB.git`
+2. Inside the project folder run: `npm i`
 3. Next: `ionic build android`
 3. After that: `ionic run android`
 
-Now you should see on your emulator/device the project and on the main page the elements from the database `data.db` table `test`.
+Now you should see on your emulator/device the project and on the main page the elements from the database `data.db` table `testTable`.
 
 ---
 
-#### Start from scratch:
+## Start from scratch:
 1. Create ionic project e.g., `ionic start projectName blank --v2`
 2. Add cordova-sqlite-ext: `ionic plugin add cordova-sqlite-ext --save`
 3. Create(you can use DB Browser for this) and copy your .db file to your project `/www` folder.
-4. Open and read your database file on your `home.ts` file
+4. Add code to your `home.ts` folder to open the pre-populated database and then execute some query on a existing table on said database.
 5. Run your project on a emulator/device and see the results.
+
+---
+
+# Possible problems
+1. If you can't execute with sucess the commands: `ionic build android` or `ionic run android` then run:
+
+     `cordova platform add https://github.com/apache/cordova-android`
+
