@@ -21,5 +21,14 @@ export class HomePage {
         console.log("Number of names on database = " + this.names.length);
       })
     });
+    /* this.accessDB();*/
   }
+
+  /* async accessDB() {
+   let db = await this.sqlite.create(this.options);
+   let data = await db.executeSql(this.queryNames, {});
+   let rows = data.rows;
+   for (let i = 0; i < rows.length; i++)
+     this.names.push(rows.item(i).name + " async/await");
+ }*/
 }
