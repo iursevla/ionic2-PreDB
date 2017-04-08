@@ -28,3 +28,9 @@ Now you should see on your emulator/device the project and on the main page the 
 
      `cordova platform add https://github.com/apache/cordova-android`
 
+# Async/Await
+This example contains commented code to use async/await to query the database. 
+
+To use this code, you should go to ```home.ts``` and comment lines 16-23 and uncomment line 24 and the method called ```accessDB()```.
+
+Then go to ```tsconfig.json``` and change ```"target":"es5"``` to ```"target":"es2015"```
